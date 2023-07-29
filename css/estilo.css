@@ -47,6 +47,11 @@ a {
     cursor: pointer;
 }
 
+.logoCabResp {
+    background-color: #1d1d1b;
+    border: none;
+}
+
 /*ESTILOS DE DIVS*/
 
 .cabecera {
@@ -62,6 +67,11 @@ a {
 
 }
 
+.cabeceraResp {
+    background-color: #1d1d1b;
+    display: flex;
+    justify-content: center;
+}
 .menu {
     height: 100%;
     background-color: #f32735;
@@ -186,6 +196,16 @@ a {
     }
     .gridPadre {
         display: block;
+    }
+
+    .cabecera {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1022px) {
+    .cabeceraResp {
+        display: none;
     }
 }
 
