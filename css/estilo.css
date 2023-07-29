@@ -49,13 +49,6 @@ a {
 
 /*ESTILOS DE DIVS*/
 
-.gridPadre {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 33% 67%;
-    grid-template-areas: 
-    "menu contenido";
-}
 .cabecera {
     background-color: #1d1d1b;
     font-size: 0.75rem;
@@ -71,15 +64,14 @@ a {
 
 .menu {
     height: 100%;
-    min-height: 500px;
     background-color: #f32735;
-    overflow: hidden;
     font-size: 2rem;
     font-weight: 800;
-
 }
 
 .menu ul {
+    inline-size: 330px;
+    writing-mode: horizontal-tb; 
     margin: 15px;
     position: fixed;
 
