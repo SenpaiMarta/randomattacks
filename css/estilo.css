@@ -67,6 +67,10 @@ a {
 
 }
 
+.cabecera p {
+    margin-bottom: 0px;
+}
+
 .cabeceraResp {
     background-color: #1d1d1b;
     display: flex;
@@ -86,6 +90,12 @@ a {
     position: fixed;
 
 }
+.menuResponsive {
+    background-color: #f32735;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 800;
+}
 
 .cuerpo {
     background-color: #fafafa;
@@ -96,6 +106,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-left: 10px;
+    padding-top: 10px;
     background-color: #1d1d1b;
     color: #fafafa;
     font-size: 0.75rem;
@@ -108,13 +120,15 @@ a {
 
 .fotoIzq {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .cartelesIndex {
-    display: flex;
+    
     background-color: #1d1d1b;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
 }
 .cartelesIndex h2 {
     color: #fafafa;
@@ -138,6 +152,15 @@ a {
     font-style: italic;
 }
 
+.tarjetaCarteles {
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjetaCarteles button {
+    width:fit-content
+}
+
 /*DISTRIBUCIÓN DE PÁGINA*/
 .gridPadre {
     display: grid;
@@ -148,6 +171,12 @@ a {
 }
 
 /*ESTILOS ELEMENTOS*/
+
+.botonCabeceraResp {
+    background-color: #1d1d1b;
+    border: none;
+    margin: 10px;
+}
 .logoCabecera {
     display: flex;
     width: 150px;
@@ -155,8 +184,7 @@ a {
 
 .logoInsta {
     display: inline-block;
-    width: 50px;
-    margin: 5px;
+    width: 30px;
     margin-left: 5px;
 } 
 
@@ -170,6 +198,10 @@ a {
     display: flex;
     align-items: center;
 
+}
+
+.redSocial p {
+    margin-bottom: 0px;
 }
 
 .fotos {
@@ -209,6 +241,11 @@ a {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .fotoIzq {
+        display: inline-block;
+    }
+}
 a:hover {
     color: #fafafa;
     font-style: italic;

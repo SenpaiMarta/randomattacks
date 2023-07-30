@@ -41,16 +41,34 @@
 
         <!-- CABECERA RESPONSIVE CON MENÚ DESPLEGABLE -->
         <div class="cabeceraResp">
-            <div class="dropdown-center">
-                <button class="btn btn-secondary dropdown-toggle logoCabResp" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <img src="images/logo-random-attacks.svg" alt="logo random attacks" class="logoCabecera">
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Action two</a></li>
-                    <li><a class="dropdown-item" href="#">Action three</a></li>
-                </ul>
+            <button class="botonCabeceraResp" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"aria-controls="offcanvasTop"><img src="images/logo-random-attacks.svg" alt="logo random attacks" class="logoCabecera"></button>
+
+            <div class="offcanvas offcanvas-end menuResponsive" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html">Random Attacks</a>
+                            </li>
+                            <li>
+                                <a href="pages/descripcion.html">¿Qué es?</a>
+                            </li>
+                            <li>
+                                <a href="pages/reglamento.html">Reglamento</a>
+                            </li>
+                            <li>
+                                <a href="pages/manifiesto.html">Manifiesto España</a>
+                            </li>
+                            <li>
+                                <a href="pages/contacto.html">¿Quieres participar?</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
 
@@ -111,7 +129,7 @@
                         </div>
 
                         <div>
-                            <div class="carteles">
+                            <div class="tarjetaCarteles">
                                 <img src="images/CAMP-RANDOM-FEJJYDA-2023.jpg" alt="random attacks españa 2023"
                                     class="carteles">
                                 <h3>España - Toledo</h3>
@@ -121,7 +139,7 @@
                                 </button>
                             </div>
 
-                            <div class="carteles">
+                            <div class="tarjetaCarteles">
                                 <img src="images/ekra2024.jpg" alt="random attacks españa 2023" class="carteles">
                                 <h3>Bélgica - Halle</h3>
                                 <p>11/Mayo/2024</p>
