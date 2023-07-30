@@ -27,6 +27,8 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     font-weight:800;
+    color: #f32735;
+    text-align: center;
 }
 
 h3 {
@@ -59,6 +61,7 @@ a {
     font-size: 0.75rem;
     color: #fafafa;
     padding: 10px;
+    padding-right: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -125,10 +128,13 @@ a {
 }
 
 .cartelesIndex {
-    
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 15px 15px;
     background-color: #1d1d1b;
     border-radius: 10px;
-    padding: 5px;
+    padding: 15px;
+    justify-items: center;
 }
 .cartelesIndex h2 {
     color: #fafafa;
@@ -168,6 +174,13 @@ a {
     grid-template-areas: 
     "menu cuerpo";
 
+}
+
+.contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 30px 30px;
 }
 
 /*ESTILOS ELEMENTOS*/
@@ -222,6 +235,54 @@ a {
     margin-top: 15px;
 }
 
+.accordion-header {
+    font-size: 1.5rem;
+    color: #f32735;
+}
+
+.tituloReglamento {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #f32735;
+}
+
+input {
+    border-color: #1d1d1b;
+    border-width: 2px;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+input placeholder {
+    text-align: center;
+}
+
+textarea {
+    border-color: #1d1d1b;
+    width: 100%;
+    border-radius: 10px;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+
+.botonForm {
+    background-color: #fafafa;
+    border: none;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #1d1d1b;
+    cursor: pointer;
+}
+
+.tituloCabecera {
+    font-size: 1rem;
+
+}
+
+/* COMANDOS RESPONSIVE */
+
 @media (max-width: 1023px) {
     .menu {
         display: none; 
@@ -241,12 +302,46 @@ a {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 707px) {
     .fotoIzq {
         display: inline-block;
+        }
+    
+    .cartelesIndex {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 3fr 3fr;
+        width: 100%;
+        justify-items: center;
     }
+
+    h1 {
+        text-align: center;
+    }
+
 }
+
+/* PSEUDOCLASES DE INTERACCIÓN Y OTROS */
+
 a:hover {
     color: #fafafa;
     font-style: italic;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #f32735;
+    color: #fafafa;
+
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    padding-top: 20%;
+
+}
+
+.botonForm:hover {
+    font-size: 2.2rem;
+    color: #f32735;
+    font-weight: 900;
 }
