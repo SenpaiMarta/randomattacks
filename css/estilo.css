@@ -246,6 +246,12 @@ a {
     color: #f32735;
 }
 
+.videoIntro {
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+
+}
+
 input {
     border-color: #1d1d1b;
     border-width: 2px;
