@@ -41,10 +41,12 @@
 
         <!-- CABECERA RESPONSIVE CON MENÚ DESPLEGABLE -->
         <section class="cabeceraResp">
-            <button class="botonCabeceraResp" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasTop"><img src="images/logo-random-attacks-menuresp.svg" alt="logo random attacks" class="logoCabecera"></button>
+            <button class="botonCabeceraResp" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                <img src="images/logo-random-attacks-menuresp.svg" alt="logo random attacks" class="logoCabResp">
+            </button>
 
-            <div class="offcanvas offcanvas-end menuResponsive" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas offcanvas-end menuResponsive" tabindex="-1" id="offcanvasTop"
+                aria-labelledby="offcanvasTopLabel">
                 <div class="offcanvas-header">
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
@@ -84,7 +86,7 @@
                     </div>
 
                     <div>
-                        <h3 class="tituloCabecera">La forma de competición de la defensa personal</h3>
+                        <h3>La forma de competición de la defensa personal</h3>
                     </div>
 
                     <div class="redSocial">
@@ -101,8 +103,12 @@
                 <div class="cuerpo">
                     <!-- INTRO FOTO+TEXTO -->
 
-                    <section>
+                    <section class="videoIntro">
                         <video src="images/video-random-attacks.mov" muted="true" autoplay="autoplay" loop="loop" playsinline="true" class="videoIntro"></video>
+                    </section>
+
+                    <section class="videoResponsive">
+                        <video src="images/video-random-attacks-responsive.mp4" muted="true" autoplay="autoplay" loop="loop" playsinline="true" class="videoResponsive"></video>
                     </section>
 
                     <section class="fotoIzq">
@@ -111,8 +117,9 @@
                                 class="fotos">
                         </div>
                         <div>
-                            <h1>La defensa personal en competición</h1>
-                            <p>Lorem fistrum ese que llega no te digo trigo por no llamarte Rodrigor llevame al sircoo se calle ustée. Amatomaa jarl va usté muy cargadoo qué dise usteer a gramenawer no te digo trigo por no llamarte Rodrigor.Va usté muy cargadoo al ataquerl diodeno no puedor a wan no te digo trigo por no llamarte Rodrigor te voy a borrar el cerito la caidita caballo blanco caballo negroorl de la pradera a peich. Pecador torpedo sexuarl te voy a borrar el cerito.Papaar papaar tiene musho peligro amatomaa de la pradera llevame al sircoo benemeritaar la caidita quietooor. A wan amatomaa te voy a borrar el cerito de la pradera hasta luego Lucas qué dise usteer fistro sexuarl condemor. Diodenoo torpedo a gramenawer benemeritaar a wan.</p>
+                            <h1>La <span class="destTitulos">defensa personal</span> en competición</h1>
+                            <p>El <span class="txtDest">Random Attacks</span> es la forma de competición que más se aproxima a la defensa personal real en el ámbito deportivo. A través de la variedad técnica y evaluando la velocidad y realidad de las ejecuciones, los competidores deben demostrar que <span class="txtDest">pueden resolver, sin previo aviso, cualquiera de los hasta 40 ataques solicitados por los jueces.</span> </p>
+                            <p>Esta forma de competición puede ser realizada por <span class="txtDest">artistas marciales de cualquier disciplina</span>, ya que la forma de evaluar las técnicas se basa en la contundencia, efectividad y creatividad de cada una de las resoluciones que planteen los competidores.</p>
                         </div>
                     </section>
 
@@ -152,6 +159,13 @@
                         </div>
                     </section>
 
+                    <!-- FORMA DE CONTACTO -->
+                    <section class="filaContactar">
+                        <h2>¿Te gustaría participar?</h2>
+                        <button>
+                            <a href="pages/contacto.html">Déjanos tu contacto</a>
+                        </button>
+                    </section>
 
             </main>
 
@@ -163,9 +177,10 @@
                             <img src="images/logo-fejjyda.svg" alt="logo fejjyda" class="logosPie">
                         </a>
                 </section>
+        <!-- cierre div contenido -->
         </div>
         </footer>
-
+    <!-- cierre div gridpadre -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

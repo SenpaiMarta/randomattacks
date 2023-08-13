@@ -1,0 +1,73 @@
+@media (max-width: 1023px) {
+    .menu {
+        display: none; 
+    }
+    .gridPadre {
+        display: block;
+    }
+
+    .cabecera {
+        display: none;
+    }
+
+    .videoIntro {
+        display: none;
+    }
+
+    .filaContactar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartelesIndex {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 3fr 3fr;
+        width: 100%;
+        justify-items: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1022px) {
+    .cabeceraResp {
+        display: none;
+    }
+
+    .videoResponsive {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .cuerpo .fotoIzq {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            margin: auto;
+        }
+    }
+
+    .cuerpo .fotoDcha {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            margin: auto;
+        }
+    }
+
+    .cuerpo .gridTarjetas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
