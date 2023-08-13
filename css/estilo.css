@@ -270,6 +270,40 @@ a {
   border-radius: 15px;
   padding: 5px 5px 5px 5px;
 }
+.cuerpo .accordion-header {
+  font-size: 1.5rem;
+  color: #f32735;
+}
+.cuerpo .tituloReglamento {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #f32735;
+}
+.cuerpo .accordion-button:not(.collapsed) {
+  background-color: #f32735;
+  color: #fafafa;
+}
+.cuerpo .accordion-button:focus {
+  border-color: none;
+}
+.cuerpo .listaReglamento {
+  list-style: circle;
+}
+.cuerpo .tablaCategoriasReglamento {
+  border: 1px solid #1d1d1b;
+  border-collapse: collapse;
+  padding: 8px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.cuerpo .tablaCategoriasReglamento th {
+  background-color: #f2f2f2;
+  border: 1px solid #1d1d1b;
+}
+.cuerpo .tablaCategoriasReglamento td {
+  border: 1px solid #1d1d1b;
+}
 
 .pie {
   display: flex;
