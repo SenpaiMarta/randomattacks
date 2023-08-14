@@ -1,0 +1,22 @@
+%tarjetaBase {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    p {
+        margin: 0 20px;
+    }
+}
+
+%fotoBase {
+    display: flex;
+
+    img {
+        width: 250px;
+        margin: auto;
+    }
+}

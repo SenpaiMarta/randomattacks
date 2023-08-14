@@ -3,9 +3,30 @@
 ROJO: #f32735
 NEGRO: #1d1d1b
 BLANCO: #fafafa*/
+/*VINCULAMOS HOJAS DE SCSS SEPARADAS - MIXIN Y EXTEND*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;0,800;0,900;1,600&display=swap");
+.tarjetaManifiestoInvertida, .tarjetaManifiesto {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+.tarjetaManifiestoInvertida h2, .tarjetaManifiesto h2 {
+  font-size: 5rem;
+}
+.tarjetaManifiestoInvertida p, .tarjetaManifiesto p {
+  margin: 0 20px;
+}
+
+.cuerpo .fotoDcha, .cuerpo .fotoIzq {
+  display: flex;
+}
+.cuerpo .fotoDcha img, .cuerpo .fotoIzq img {
+  width: 250px;
+  margin: auto;
+}
+
 /*ESTILOS GENERALES DE PÁGINA*/
 /*Vinculamos fuentes*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;0,800;0,900;1,600&display=swap");
 /*Quitamos márgenes*/
 * {
   margin: 0;
@@ -88,6 +109,12 @@ a {
   font-weight: 900;
   color: #1d1d1b;
   cursor: pointer;
+  height: fit-content;
+  transition: font-size 1s;
+}
+.contacto .botonForm:hover {
+  font-size: 2.5rem;
+  color: #f32735;
 }
 .contacto ::-webkit-input-placeholder {
   text-align: center;
@@ -158,10 +185,9 @@ a {
   position: fixed;
 }
 .menu ul :hover {
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
-  font-weight: 800;
-  font-style: italic;
+  color: #fafafa;
+}
+.menu ul .active {
   color: #fafafa;
 }
 
@@ -192,23 +218,14 @@ a {
   width: 100%;
   margin: 0px 0px 10px 0px;
 }
-.cuerpo .fotoIzq {
-  display: flex;
-}
-.cuerpo .fotoIzq img {
-  width: 250px;
-  margin: auto;
-}
 .cuerpo .fotoIzq p {
   margin-left: 15px;
 }
 .cuerpo .fotoDcha {
-  display: flex;
   flex-direction: row-reverse;
 }
-.cuerpo .fotoDcha img {
-  width: 250px;
-  margin: auto;
+.cuerpo .fotoDcha p {
+  margin-right: 15px;
 }
 .cuerpo .txtDest {
   font-family: "Poppins", sans-serif;
@@ -238,15 +255,19 @@ a {
   color: #1d1d1b;
   border: none;
   border-radius: 15px;
-  padding: 5px 5px 5px 5px;
+  padding: 8px 8px 8px 8px;
+  transition: font-size 0.5s;
 }
-.cuerpo .gridTarjetas {
+.cuerpo .filaContactar button:hover {
+  font-size: 1.2rem;
+}
+.cuerpo .gridTarjetasInfo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-gap: 5px;
 }
-.cuerpo .gridTarjetas .tarjetas {
+.cuerpo .gridTarjetasInfo .tarjetas {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -257,10 +278,10 @@ a {
   width: 100%;
   margin: 10px 0px 0px 0px;
 }
-.cuerpo .gridTarjetas .tarjetas h2 {
+.cuerpo .gridTarjetasInfo h2 {
   color: #fafafa;
 }
-.cuerpo .gridTarjetas .tarjetas button {
+.cuerpo .gridTarjetasInfo button {
   width: fit-content;
   height: fit-content;
   background-color: #fafafa;
@@ -270,27 +291,37 @@ a {
   border: none;
   border-radius: 15px;
   padding: 8px 8px 8px 8px;
+  transition: font-size 0.5s;
 }
-.cuerpo .accordion-header {
+.cuerpo .gridTarjetasInfo button:hover {
+  font-size: 1.2rem;
+}
+
+.accordion-header {
   font-size: 1.5rem;
   color: #f32735;
 }
-.cuerpo .tituloReglamento {
+
+.tituloReglamento {
   font-size: 1.5rem;
   font-weight: 800;
   color: #f32735;
 }
-.cuerpo .accordion-button:not(.collapsed) {
+
+.accordion-button:not(.collapsed) {
   background-color: #f32735;
   color: #fafafa;
 }
-.cuerpo .accordion-button:focus {
+
+.accordion-button:focus {
   border-color: none;
 }
-.cuerpo .listaReglamento {
+
+.listaReglamento {
   list-style: circle;
 }
-.cuerpo .tablaCategoriasReglamento {
+
+.tablaCategoriasReglamento {
   border: 1px solid #1d1d1b;
   border-collapse: collapse;
   padding: 8px;
@@ -299,41 +330,29 @@ a {
   margin-bottom: 10px;
   align-items: center;
 }
-.cuerpo .tablaCategoriasReglamento th {
+.tablaCategoriasReglamento th {
   background-color: #f2f2f2;
   border: 1px solid #1d1d1b;
 }
-.cuerpo .tablaCategoriasReglamento td {
+.tablaCategoriasReglamento td {
   border: 1px solid #1d1d1b;
 }
-.cuerpo .tarjetaManifiesto {
-  display: flex;
-  margin: 10px 10px 10px 10px;
-}
-.cuerpo .tarjetaManifiesto h2 {
-  font-size: 5rem;
-}
-.cuerpo .tarjetaManifiesto p {
-  margin-left: 20px;
-}
-.cuerpo .tarjetaManifiestoInvertida {
-  display: flex;
+
+.tarjetaManifiestoInvertida {
   flex-direction: row-reverse;
-  margin: 10px 10px 10px 10px;
   background-color: #f32735;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   border-radius: 15px;
-  align-items: center;
 }
-.cuerpo .tarjetaManifiestoInvertida h2 {
-  font-size: 5rem;
+.tarjetaManifiestoInvertida h2 {
   color: #1d1d1b;
 }
-.cuerpo .tarjetaManifiestoInvertida p {
-  margin-right: 20px;
+.tarjetaManifiestoInvertida p {
+  margin: 0 20px;
   color: #fafafa;
 }
-.cuerpo .fotoPpal {
+
+.fotoPpal {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -401,6 +420,10 @@ a {
 }
 .cartelesIndex .tarjetaCarteles img {
   width: 200px;
+  transition: width 0.5s;
+}
+.cartelesIndex .tarjetaCarteles img:hover {
+  width: 250px;
 }
 
 /*VINCULAMOS HOJAS DE SCSS SEPARADAS - RESPONSIVE*/
