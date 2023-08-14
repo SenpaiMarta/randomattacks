@@ -61,6 +61,7 @@ a {
   grid-template-columns: 1fr;
   justify-items: center;
   gap: 30px 30px;
+  padding: 10px 10px 10px 10px;
 }
 .contacto input {
   border-color: #1d1d1b;
@@ -268,7 +269,7 @@ a {
   color: #1d1d1b;
   border: none;
   border-radius: 15px;
-  padding: 5px 5px 5px 5px;
+  padding: 8px 8px 8px 8px;
 }
 .cuerpo .accordion-header {
   font-size: 1.5rem;
@@ -303,6 +304,31 @@ a {
 }
 .cuerpo .tablaCategoriasReglamento td {
   border: 1px solid #1d1d1b;
+}
+.cuerpo .tarjetaManifiesto {
+  display: flex;
+  margin: 10px 10px 10px 10px;
+}
+.cuerpo .tarjetaManifiesto h2 {
+  font-size: 5rem;
+}
+.cuerpo .tarjetaManifiesto p {
+  margin-left: 20px;
+}
+.cuerpo .tarjetaManifiestoInvertida {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 10px 10px 10px 10px;
+}
+.cuerpo .tarjetaManifiestoInvertida h2 {
+  font-size: 5rem;
+}
+.cuerpo .tarjetaManifiestoInvertida p {
+  margin-right: 20px;
+}
+.cuerpo .fotoPpal {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .pie {

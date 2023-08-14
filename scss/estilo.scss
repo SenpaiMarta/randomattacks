@@ -65,6 +65,7 @@ a {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 30px 30px;
+    padding: 10px 10px 10px 10px;
 
     input {
         border-color: #1d1d1b;
@@ -307,7 +308,7 @@ a {
                 color: #1d1d1b;
                 border: none;
                 border-radius: 15px;
-                padding: 5px 5px 5px 5px;
+                padding: 8px 8px 8px 8px;
             }
         }
 
@@ -355,6 +356,38 @@ a {
 
         }
 
+    }
+
+    .tarjetaManifiesto {
+        display: flex;
+        margin: 10px 10px 10px 10px;
+        
+        h2 {
+            font-size: 5rem;
+        }
+
+        p {
+            margin-left: 20px;
+        }
+    }
+
+    .tarjetaManifiestoInvertida {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 10px 10px 10px 10px;
+
+        h2 {
+            font-size: 5rem;
+        }
+
+        p {
+            margin-right: 20px;
+        }
+    }
+
+    .fotoPpal {
+        width: 100%;
+        margin-bottom: 20px;    
     }
     
 }
