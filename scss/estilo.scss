@@ -345,6 +345,7 @@ a {
         text-align: center;
         width: 100%;
         margin-bottom: 10px;
+        align-items: center;
 
         th {
             background-color: #f2f2f2;
@@ -375,13 +376,20 @@ a {
         display: flex;
         flex-direction: row-reverse;
         margin: 10px 10px 10px 10px;
+        background-color: #f32735;
+        padding: 10px 10px 10px 10px;
+        border-radius: 15px;
+        align-items: center;
+
 
         h2 {
             font-size: 5rem;
+            color:#1d1d1b;
         }
 
         p {
             margin-right: 20px;
+            color: #fafafa;
         }
     }
 
