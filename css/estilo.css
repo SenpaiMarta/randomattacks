@@ -11,7 +11,7 @@ BLANCO: #fafafa*/
   align-items: center;
 }
 .tarjetaManifiestoInvertida h2, .tarjetaManifiesto h2 {
-  font-size: 5rem;
+  font-size: 1.5rem;
 }
 .tarjetaManifiestoInvertida p, .tarjetaManifiesto p {
   margin: 0 20px;
@@ -480,10 +480,8 @@ a {
   .cuerpo .fotoDcha img {
     margin: auto;
   }
-  .cuerpo .gridTarjetas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .cuerpo .gridTarjetasInfo {
+    display: block;
   }
 }
 
