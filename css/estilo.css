@@ -11,22 +11,24 @@ BLANCO: #fafafa*/
   align-items: center;
 }
 .tarjetaManifiestoInvertida h2, .tarjetaManifiesto h2 {
-  font-size: 1.5rem;
+  font-size: 5rem;
 }
 .tarjetaManifiestoInvertida p, .tarjetaManifiesto p {
-  margin: 0 20px;
+  margin: 20px;
 }
 
-.cuerpo .fotoDcha, .cuerpo .fotoIzq {
+.fotoDcha, .fotoIzq {
   display: flex;
 }
-.cuerpo .fotoDcha img, .cuerpo .fotoIzq img {
+.fotoDcha img, .fotoIzq img {
   width: 250px;
   margin: auto;
 }
 
 /*ESTILOS GENERALES DE PÁGINA*/
 /*Vinculamos fuentes*/
+/*VINCULAMOS HOJAS DE SCSS SEPARADAS - ESTILOS Y ELEMENTOS*/
+/*ELEMENTOS*/
 /*Quitamos márgenes*/
 * {
   margin: 0;
@@ -69,58 +71,128 @@ a {
   cursor: pointer;
 }
 
-/*DISTRIBUCIÓN DE PÁGINA*/
+/*TEXTOS DESTACADOS*/
+.txtDest {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+.destTitulos {
+  color: #f32735;
+}
+
+/*IMÁGENES*/
+.fotoIzq p {
+  margin-left: 15px;
+}
+
+.fotoDcha {
+  flex-direction: row-reverse;
+}
+.fotoDcha p {
+  margin-right: 15px;
+}
+
+.fotoPpal {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .gridPadre {
   display: grid;
   grid-template-columns: 33% 67%;
   grid-template-areas: "menu cuerpo";
 }
 
-/*ELEMENTOS */
-.contacto {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  gap: 30px 30px;
-  padding: 10px 10px 10px 10px;
-}
-.contacto input {
-  border-color: #1d1d1b;
-  border-width: 2px;
-  height: 40px;
-  width: 100%;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.contacto input placeholder {
-  text-align: center;
-}
-.contacto textarea {
-  border-color: #1d1d1b;
-  width: 100%;
-  border-radius: 10px;
-  flex-wrap: nowrap;
-  overflow: auto;
-}
-.contacto .botonForm {
+.cuerpo {
   background-color: #fafafa;
-  border: none;
-  font-size: 2rem;
-  font-weight: 900;
-  color: #1d1d1b;
-  cursor: pointer;
-  height: fit-content;
-  transition: font-size 1s;
-}
-.contacto .botonForm:hover {
-  font-size: 2.5rem;
-  color: #f32735;
-}
-.contacto ::-webkit-input-placeholder {
-  text-align: center;
-  padding-top: 20%;
+  padding: 20px;
 }
 
+.contenido {
+  height: 100%;
+}
+
+.filaContactar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f32735;
+  border-radius: 25px;
+  height: 120px;
+  margin: 10px 0px 0px 0px;
+}
+.filaContactar h2 {
+  color: #fafafa;
+}
+.filaContactar button {
+  width: fit-content;
+  height: fit-content;
+  background-color: #fafafa;
+  font-weight: 800;
+  font-style: italic;
+  color: #1d1d1b;
+  border: none;
+  border-radius: 15px;
+  padding: 8px 8px 8px 8px;
+  transition: font-size 0.5s;
+}
+.filaContactar button:hover {
+  font-size: 1.2rem;
+}
+
+.gridTarjetasInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 5px;
+}
+.gridTarjetasInfo .tarjetas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f32735;
+  border-radius: 25px;
+  height: 120px;
+  width: 100%;
+  margin: 10px 0px 0px 0px;
+}
+.gridTarjetasInfo .tarjetas h2 {
+  color: #fafafa;
+}
+.gridTarjetasInfo .tarjetas button {
+  width: fit-content;
+  height: fit-content;
+  background-color: #fafafa;
+  font-weight: 800;
+  font-style: italic;
+  color: #1d1d1b;
+  border: none;
+  border-radius: 15px;
+  padding: 8px 8px 8px 8px;
+  transition: font-size 0.5s;
+}
+.gridTarjetasInfo .tarjetas button:hover {
+  font-size: 1.2rem;
+}
+
+.videoYoutube {
+  margin: auto;
+  width: 100%;
+}
+
+.videoIntro {
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+}
+
+.videoResponsive {
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+}
+
+/*PÁGINAS*/
 .cabecera {
   background-color: #1d1d1b;
   font-size: 0.75rem;
@@ -202,99 +274,53 @@ a {
   color: #f32735;
 }
 
-.cuerpo {
-  background-color: #fafafa;
-  padding: 20px;
+.cartelesIndex {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  gap: 15px 15px;
+  background-color: #1d1d1b;
+  border-radius: 10px;
+  padding: 15px;
+  justify-items: center;
+  margin: 20px 0px 0px 10px;
 }
-.cuerpo .videoYoutube {
-  margin: auto;
-  width: 100%;
+.cartelesIndex h2 {
+  color: #fafafa;
+  margin: 10px 0px 10px 0px;
+  text-align: center;
 }
-.cuerpo .videoIntro {
-  width: 100%;
-  margin: 0px 0px 10px 0px;
-}
-.cuerpo .videoResponsive {
-  width: 100%;
-  margin: 0px 0px 10px 0px;
-}
-.cuerpo .fotoIzq p {
-  margin-left: 15px;
-}
-.cuerpo .fotoDcha {
-  flex-direction: row-reverse;
-}
-.cuerpo .fotoDcha p {
-  margin-right: 15px;
-}
-.cuerpo .txtDest {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-}
-.cuerpo .destTitulos {
-  color: #f32735;
-}
-.cuerpo .filaContactar {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #f32735;
-  border-radius: 25px;
-  height: 120px;
+.cartelesIndex h3 {
   margin: 10px 0px 0px 0px;
-}
-.cuerpo .filaContactar h2 {
   color: #fafafa;
 }
-.cuerpo .filaContactar button {
-  width: fit-content;
-  height: fit-content;
-  background-color: #fafafa;
-  font-weight: 800;
+.cartelesIndex p {
+  color: #fafafa;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.cartelesIndex a {
+  color: #fafafa;
   font-style: italic;
-  color: #1d1d1b;
-  border: none;
-  border-radius: 15px;
-  padding: 8px 8px 8px 8px;
-  transition: font-size 0.5s;
 }
-.cuerpo .filaContactar button:hover {
-  font-size: 1.2rem;
-}
-.cuerpo .gridTarjetasInfo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-gap: 5px;
-}
-.cuerpo .gridTarjetasInfo .tarjetas {
+.cartelesIndex .tarjetaCarteles {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f32735;
-  border-radius: 25px;
-  height: 120px;
-  width: 100%;
-  margin: 10px 0px 0px 0px;
 }
-.cuerpo .gridTarjetasInfo h2 {
-  color: #fafafa;
-}
-.cuerpo .gridTarjetasInfo button {
+.cartelesIndex .tarjetaCarteles button {
   width: fit-content;
-  height: fit-content;
-  background-color: #fafafa;
-  font-weight: 800;
-  font-style: italic;
-  color: #1d1d1b;
+  padding: 0px 10px 0px 10px;
+  background-color: #f32735;
+  color: #fafafa;
   border: none;
-  border-radius: 15px;
-  padding: 8px 8px 8px 8px;
-  transition: font-size 0.5s;
+  border-radius: 5px;
+  margin-top: 15px;
 }
-.cuerpo .gridTarjetasInfo button:hover {
-  font-size: 1.2rem;
+.cartelesIndex .tarjetaCarteles img {
+  width: 200px;
+  transition: width 0.5s;
+}
+.cartelesIndex .tarjetaCarteles img:hover {
+  width: 250px;
 }
 
 .accordion-header {
@@ -352,9 +378,48 @@ a {
   color: #fafafa;
 }
 
-.fotoPpal {
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 30px 30px;
+  padding: 10px 10px 10px 10px;
+}
+.contacto input {
+  border-color: #1d1d1b;
+  border-width: 2px;
+  height: 40px;
   width: 100%;
-  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.contacto input placeholder {
+  text-align: center;
+}
+.contacto textarea {
+  border-color: #1d1d1b;
+  width: 100%;
+  border-radius: 10px;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+.contacto .botonForm {
+  background-color: #fafafa;
+  border: none;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #1d1d1b;
+  cursor: pointer;
+  height: fit-content;
+  transition: font-size 1s;
+}
+.contacto .botonForm:hover {
+  font-size: 2.5rem;
+  color: #f32735;
+}
+.contacto ::-webkit-input-placeholder {
+  text-align: center;
+  padding-top: 20%;
 }
 
 .pie {
@@ -371,59 +436,6 @@ a {
   display: flex;
   width: 100px;
   margin: 20px;
-}
-
-.contenido {
-  height: 100%;
-}
-
-.cartelesIndex {
-  display: grid;
-  grid-template-columns: 3fr 3fr 3fr;
-  gap: 15px 15px;
-  background-color: #1d1d1b;
-  border-radius: 10px;
-  padding: 15px;
-  justify-items: center;
-  margin: 20px 0px 0px 10px;
-}
-.cartelesIndex h2 {
-  color: #fafafa;
-  margin: 10px 0px 10px 0px;
-  text-align: center;
-}
-.cartelesIndex h3 {
-  margin: 10px 0px 0px 0px;
-  color: #fafafa;
-}
-.cartelesIndex p {
-  color: #fafafa;
-  margin-top: 5px;
-  margin-bottom: 0px;
-}
-.cartelesIndex a {
-  color: #fafafa;
-  font-style: italic;
-}
-.cartelesIndex .tarjetaCarteles {
-  display: flex;
-  flex-direction: column;
-}
-.cartelesIndex .tarjetaCarteles button {
-  width: fit-content;
-  padding: 0px 10px 0px 10px;
-  background-color: #f32735;
-  color: #fafafa;
-  border: none;
-  border-radius: 5px;
-  margin-top: 15px;
-}
-.cartelesIndex .tarjetaCarteles img {
-  width: 200px;
-  transition: width 0.5s;
-}
-.cartelesIndex .tarjetaCarteles img:hover {
-  width: 250px;
 }
 
 /*VINCULAMOS HOJAS DE SCSS SEPARADAS - RESPONSIVE*/

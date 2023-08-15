@@ -1,0 +1,77 @@
+/*Quitamos márgenes*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Fuentes de la página*/ 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 900;    
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight:800;
+    color: #f32735;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight:800;
+}
+
+/*Quitamos estilo a las listas*/
+ul {
+    list-style: none;
+}
+
+/*Quitamos estilo a los enlaces*/
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+
+/*TEXTOS DESTACADOS*/
+
+.txtDest {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.destTitulos {
+    color: #f32735;
+}
+
+/*IMÁGENES*/
+
+.fotoIzq {
+    @extend %fotoBase;
+
+    p {
+        margin-left: 15px;
+    }
+}
+
+.fotoDcha {
+    @extend %fotoBase;
+    flex-direction: row-reverse;
+
+    p {
+        margin-right: 15px;
+    }
+}
+
+.fotoPpal {
+    width: 100%;
+    margin-bottom: 20px;    
+}

@@ -1,0 +1,17 @@
+.pie {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: #1d1d1b;
+    color: #fafafa;
+    font-size: 0.75rem;
+
+    .logosPie {
+        display: flex;
+        width: 100px;
+        margin: 20px;
+    }
+
+}

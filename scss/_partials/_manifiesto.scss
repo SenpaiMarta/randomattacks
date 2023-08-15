@@ -1,0 +1,20 @@
+.tarjetaManifiesto {
+    @extend %tarjetaBase;
+}
+
+.tarjetaManifiestoInvertida {
+    @extend %tarjetaBase;
+    flex-direction: row-reverse;
+    background-color: #f32735;
+    padding: 10px;
+    border-radius: 15px;
+
+    h2 {
+        color: #1d1d1b;
+    }
+
+    p {
+        margin: 0 20px;
+        color: #fafafa;
+    }
+}

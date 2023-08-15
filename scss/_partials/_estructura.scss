@@ -1,0 +1,17 @@
+.gridPadre {
+    display: grid;
+    grid-template-columns: 33% 67%;
+    grid-template-areas: 
+    "menu cuerpo";
+
+}
+
+.cuerpo {
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+.contenido {
+    height: 100%;
+
+}

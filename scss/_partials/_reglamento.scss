@@ -1,0 +1,44 @@
+.accordion-header {
+    font-size: 1.5rem;
+    color: #f32735;
+}
+
+.tituloReglamento {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #f32735;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #f32735;
+    color: #fafafa;
+}
+
+.accordion-button:focus {
+    border-color: none;
+}
+
+.listaReglamento {
+    list-style: circle;
+}
+
+.tablaCategoriasReglamento {
+    border: 1px solid #1d1d1b;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    align-items: center;
+
+    th {
+        background-color: #f2f2f2;
+        border: 1px solid #1d1d1b;
+    }
+
+    td {
+        border: 1px solid #1d1d1b;
+
+    }
+
+}

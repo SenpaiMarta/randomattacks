@@ -1,0 +1,58 @@
+.cabecera {
+    background-color: #1d1d1b;
+    font-size: 0.75rem;
+    color: #fafafa;
+    padding: 10px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: flex-end;
+    font-weight: bold;
+
+    p {
+        margin-bottom: 0px;
+    }
+
+    .logoCabecera {
+        display: flex;
+        width: 150px;
+    }
+
+    .redSocial {
+        display: flex;
+        align-items: center;
+
+        p {
+            margin-bottom: 0px;
+        }
+    }
+
+    .logoInsta {
+        display: inline-block;
+        width: 30px;
+        margin-left: 5px;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+}
+
+.cabeceraResp {
+    background-color: #1d1d1b;
+    display: flex;
+    justify-content: center;
+
+    .logoCabResp {
+        height: 100px;
+        background-color: #1d1d1b;
+        border: none;
+    }
+
+    .botonCabeceraResp {
+        background-color: #1d1d1b;
+        border: none;
+        margin: 10px;
+    }
+}
