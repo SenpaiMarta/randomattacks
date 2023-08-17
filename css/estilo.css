@@ -10,7 +10,9 @@ BLANCO: #fafafa*/
   margin: 10px;
   align-items: center;
 }
-.tarjetaManifiestoInvertida h2, .tarjetaManifiesto h2 {
+.tarjetaManifiestoInvertida .numManifiesto, .tarjetaManifiesto .numManifiesto {
+  font-weight: 900;
+  color: #f32735;
   font-size: 5rem;
 }
 .tarjetaManifiestoInvertida p, .tarjetaManifiesto p {
@@ -125,7 +127,7 @@ a {
 .filaContactar h2 {
   color: #fafafa;
 }
-.filaContactar button {
+.filaContactar a {
   width: fit-content;
   height: fit-content;
   background-color: #fafafa;
@@ -137,7 +139,7 @@ a {
   padding: 8px 8px 8px 8px;
   transition: font-size 0.5s;
 }
-.filaContactar button:hover {
+.filaContactar a:hover {
   font-size: 1.2rem;
 }
 
@@ -161,7 +163,7 @@ a {
 .gridTarjetasInfo .tarjetas h2 {
   color: #fafafa;
 }
-.gridTarjetasInfo .tarjetas button {
+.gridTarjetasInfo .tarjetas a {
   width: fit-content;
   height: fit-content;
   background-color: #fafafa;
@@ -173,7 +175,7 @@ a {
   padding: 8px 8px 8px 8px;
   transition: font-size 0.5s;
 }
-.gridTarjetasInfo .tarjetas button:hover {
+.gridTarjetasInfo .tarjetas a:hover {
   font-size: 1.2rem;
 }
 
@@ -309,7 +311,7 @@ a {
   display: flex;
   flex-direction: column;
 }
-.cartelesIndex .tarjetaCarteles button {
+.cartelesIndex .tarjetaCarteles a {
   width: fit-content;
   padding: 0px 10px 0px 10px;
   background-color: #f32735;
@@ -373,7 +375,7 @@ a {
   padding: 10px;
   border-radius: 15px;
 }
-.tarjetaManifiestoInvertida h2 {
+.tarjetaManifiestoInvertida .numManifiesto {
   color: #1d1d1b;
 }
 .tarjetaManifiestoInvertida p {
@@ -387,6 +389,11 @@ a {
   justify-items: center;
   gap: 30px 30px;
   padding: 10px 10px 10px 10px;
+}
+.contacto legend {
+  color: #f32735;
+  font-size: 2rem;
+  font-weight: 800;
 }
 .contacto input {
   border-color: #1d1d1b;
@@ -497,6 +504,9 @@ a {
   }
   .cuerpo .gridTarjetasInfo {
     display: block;
+  }
+  .cuerpo .contacto legend {
+    text-align: center;
   }
 }
 
