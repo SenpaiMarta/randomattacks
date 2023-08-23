@@ -22,30 +22,28 @@
 <body>
     <div class="gridPadre">
         <!-- 1/3 - MENÚ -->
-        <section class="menu">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">Random Attacks</a>
-                    </li>
-                    <li>
-                        <a href="descripcion.html">¿Qué es?</a>
-                    </li>
-                    <li>
-                        <a href="reglamento.html">Reglamento</a>
-                    </li>
-                    <li>
-                        <a href="manifiesto.html" class="active">Manifiesto España</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">¿Quieres participar?</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="../index.html">Random Attacks</a>
+                </li>
+                <li>
+                    <a href="descripcion.html">¿Qué es?</a>
+                </li>
+                <li>
+                    <a href="reglamento.html">Reglamento</a>
+                </li>
+                <li>
+                    <a href="manifiesto.html" class="active">Manifiesto España</a>
+                </li>
+                <li>
+                <a href="contacto.html">¿Quieres participar?</a>
+                </li>
+            </ul>
+        </nav>
 
         <!-- CABECERA RESPONSIVE CON MENÚ DESPLEGABLE -->
-        <section class="cabeceraResp">
+        <header class="cabeceraResp">
             <button class="botonCabeceraResp" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasTop"><img src="../images/logo-random-attacks-menuresp.svg" alt="logo random attacks" class="logoCabResp"></button>
 
             <div class="offcanvas offcanvas-end menuResponsive" tabindex="-1" id="offcanvasRight"
@@ -75,88 +73,88 @@
                     </nav>
                 </div>
             </div>
-        </section>
+        </header>
 
         <!-- 2/3 - HEADER+MAIN+FOOTER -->
+        <!-- SOBRE DIV columnaPpal: este es el div que me permite mantener la estructura deseada en mi página aunque no cumple ninguna otra función. -->
+
         <div class="contenido">
             <!-- CABECERA -->
-            <header>
-                <section class="cabecera">
-                    <div>
-                        <a href="../index.html">
-                            <img src="../images/logo-random-attacks.svg" alt="logo random attacks" class="logoCabecera">
-                        </a>
-                    </div>
+            <header class="cabecera">
+                <a href="../index.html">
+                    <img src="../images/logo-random-attacks.svg" alt="logo random attacks" class="logoCabecera">
+                </a>
 
-                    <div>
-                        <h3 class="tituloCabecera">La forma de competición de la defensa personal</h3>
-                    </div>
+                <h3 class="tituloCabecera">La forma de competición de la defensa personal</h3>
 
-                    <div class="redSocial">
-                        <p>Síguenos en</p>
-                        <a href="https://www.instagram.com/randomattacks/" target="_blank">
+                <div class="redSocial">
+                    <p>Síguenos en</p>
+                    <a href="https://www.instagram.com/randomattacks/" target="_blank">
                             <img src="../images/logo-instagram.svg" alt="logo instagram" class="logoInsta">
-                        </a>
-                    </div>
-                </section>
+                    </a>
+                </div>
             </header>
 
             <!-- CUERPO WEB -->
             <main class="cuerpo">
-            <!-- TARJETAS MANIFIESTO -->
             <section>
+
                 <img src="../images/manifiesto-spain-random-attacks.png" alt="manifiesto españa Random Attacks" class="fotoPpal">
                 
                 <h1>Conoce cómo entendemos <span class="destTitulos">Random Attacks en España</span></h1>
+            
+               <!-- TARJETAS MANIFIESTO -->
 
-                <div class="tarjetaManifiesto" data-aos="zoom-out-up">
+                <article class="tarjetaManifiesto" data-aos="zoom-out-up">
                     <span class="numManifiesto">1</span>
                     <p>El equipo español apostará siempre por defender técnicas en las que <span class="txtDest">la creatividad, la variedad, la contundencia y la velocidad</span> sean los protagonistas, primando la calidad de las soluciones propuestas al jurado sin olvidar la belleza técnica y la corrección.</p>
-                </div>
+                </article>
 
-                <div class="tarjetaManifiestoInvertida" data-aos="zoom-out-up">
+                <article class="tarjetaManifiestoInvertida" data-aos="zoom-out-up">
                     <span class="numManifiesto">2</span>
                     <p>Dentro de nuestra forma de entender el Random Attacks, consideramos que <span class="txtDest">la labor de uke no es solo valiosa sino que es imprescindible</span>. Basado en el principio de colaboración mutua, entendemos que <span class="txtDest">la labor de competición no podría llevarse a cabo sin esa figura que se implica</span> en cada entrenamiento y encuentro deportivo y que, además, conforma la otra mitad de lo que se va a evaluar. </p>
-                </div>
+                </article>
 
-                <div class="tarjetaManifiesto" data-aos="zoom-out-up">
+                <article class="tarjetaManifiesto" data-aos="zoom-out-up">
                     <span class="numManifiesto">3</span>
                     <p>A pesar de lo indicado en el punto anterior, entendemos que <span class="txtDest">es labor y deber de los árbitros y jueces valorar las técnicas en sí</span>, dejando de lado la posible colaboración negativa del uke o compañero que favorezca más una interpretación que una buena práctica técnica de las artes marciales.</p>
-                </div>
+                </article>
 
-                <div class="tarjetaManifiestoInvertida" data-aos="zoom-out-up">
+                <article class="tarjetaManifiestoInvertida" data-aos="zoom-out-up">
                     <span class="numManifiesto">4</span>
                     <p>El aprendizaje es el camino, y entendemos que no se debe banalizar la consecución de medallas como único destino en este viaje que es el Random Attacks. Además de las competiciones, <span class="txtDest">el mero hecho de entrenar la disciplina pone en marcha el aprendizaje de alumnos y profesores</span>, fomenta la creatividad y supone un incentivo para todo artista marcial.</p>
-                </div>
+                </article>
 
             </section>
 
             <!-- TARJETAS INFO -->
-                <section class="gridTarjetasInfo">
-                    <div class="tarjetas" data-aos="flip-right">
-                        <h2>¿Te gustaría participar?</h2>
-                        <a href="contacto.html">Déjanos tu contacto</a>
-                    </div>
+            <section class="gridTarjetasInfo">
+                <div class="tarjetas" data-aos="flip-right">
+                    <h2>¿Te gustaría participar?</h2>
+                    <a href="contacto.html">Déjanos tu contacto</a>
+                </div>
 
-                    <div class="tarjetas" data-aos="flip-right">
-                        <h2>¿Quieres conocer las reglas?</h2>
-                        <a href="reglamento.html">Reglamento online</a>
-                    </div>
-                </section>
-            </main>
+                <div class="tarjetas" data-aos="flip-right">
+                    <h2>¿Quieres conocer las reglas?</h2>
+                    <a href="reglamento.html">Reglamento online</a>
+                </div>
+            </section>
 
-            <!-- PIE DE PÁGINA -->
-            <footer>
-                <section class="pie">
-                    <p>Deporte oficial de Euro Budo International, representado en España por FEJJYDA.</p>
-                        <a href="https://fejjyda.com/" target="_blank">
-                            <img src="../images/logo-fejjyda.svg" alt="logo fejjyda" class="logosPie">
-                        </a>
-                </section>
-        </div>
+        </main>
+
+        <!-- PIE DE PÁGINA -->
+        <footer class="pie">
+            <p>Deporte oficial de Euro Budo International, representado en España por FEJJYDA.</p>
+                <a href="https://fejjyda.com/" target="_blank">
+                    <img src="../images/logo-fejjyda.svg" alt="logo fejjyda" class="logosPie">
+                </a>
         </footer>
 
+        <!-- cierre div columnaPpal -->
+        </div>
+    <!-- cierre gridPadre -->
     </div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
 crossorigin="anonymous"></script>

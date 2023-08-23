@@ -23,30 +23,28 @@
 <body>
     <div class="gridPadre">
         <!-- 1/3 - MENÚ -->
-        <section class="menu">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html" class="active">Random Attacks</a>
-                    </li>
-                    <li>
-                        <a href="pages/descripcion.html">¿Qué es?</a>
-                    </li>
-                    <li>
-                        <a href="pages/reglamento.html">Reglamento</a>
-                    </li>
-                    <li>
-                        <a href="pages/manifiesto.html">Manifiesto España</a>
-                    </li>
-                    <li>
-                        <a href="pages/contacto.html">¿Quieres participar?</a>
-                    </li>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Random Attacks</a>
+                </li>
+                <li>
+                    <a href="pages/descripcion.html">¿Qué es?</a>
+                </li>
+                <li>
+                    <a href="pages/reglamento.html">Reglamento</a>
+                </li>
+                <li>
+                    <a href="pages/manifiesto.html">Manifiesto España</a>
+                </li>
+                <li>
+                    <a href="pages/contacto.html">¿Quieres participar?</a>
+                </li>
                 </ul>
-            </nav>
-        </section>
+        </nav>
 
         <!-- CABECERA RESPONSIVE CON MENÚ DESPLEGABLE -->
-        <section class="cabeceraResp">
+        <header class="cabeceraResp">
             <button class="botonCabeceraResp" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
                 <img src="images/logo-random-attacks-menuresp.svg" alt="logo random attacks" class="logoCabResp">
             </button>
@@ -78,22 +76,18 @@
                     </nav>
                 </div>
             </div>
-        </section>
+        </header>
 
         <!-- 2/3 - HEADER+MAIN+FOOTER -->
-        <div class="contenido">
+        <!-- SOBRE DIV columnaPpal: este es el div que me permite mantener la estructura deseada en mi página aunque no cumple ninguna otra función. -->
+        <div class="columnaPpal">
             <!-- CABECERA -->
-            <header>
-                <section class="cabecera">
-                    <div>
+            <header class="cabecera">
                         <a href="index.html">
                             <img src="images/logo-random-attacks.svg" alt="logo random attacks" class="logoCabecera">
                         </a>
-                    </div>
-
-                    <div>
-                        <h3>La forma de competición de la defensa personal</h3>
-                    </div>
+                    
+                    <h3>La forma de competición de la defensa personal</h3>
 
                     <div class="redSocial">
                         <p>Síguenos en</p>
@@ -101,7 +95,6 @@
                             <img src="images/logo-instagram.svg" alt="logo instagram" class="logoInsta">
                         </a>
                     </div>
-                </section>
             </header>
 
             <!-- CUERPO WEB -->
@@ -109,19 +102,12 @@
                 <div class="cuerpo">
                     <!-- INTRO FOTO+TEXTO -->
 
-                    <section class="videoIntro">
                         <video src="images/video-random-attacks.mov" muted="true" autoplay="autoplay" loop="loop" playsinline="true" class="videoIntro"></video>
-                    </section>
 
-                    <section class="videoResponsive">
                         <video src="images/video-random-attacks-responsive.mp4" muted="true" autoplay="autoplay" loop="loop" playsinline="true" class="videoResponsive"></video>
-                    </section>
 
                     <section class="fotoIzq">
-                        <div data-aos="fade-right">
-                            <img src="images/que-es-random-attacks.png" alt="qué es random random attacks"
-                                class="fotos">
-                        </div>
+                        <img src="images/que-es-random-attacks.png" alt="qué es random random attacks" class="fotos" data-aos="fade-right">
                         <div>
                             <h1 class="titulos animate__animated animate__headShake">La <span class="destTitulos">defensa personal</span> en competición</h1>
                             <p>El <span class="txtDest">Random Attacks</span> es la forma de competición que más se aproxima a la defensa personal real en el ámbito deportivo. A través de la variedad técnica y evaluando la velocidad y realidad de las ejecuciones, los competidores deben demostrar que <span class="txtDest">pueden resolver, sin previo aviso, cualquiera de los hasta 40 ataques solicitados por los jueces.</span> </p>
@@ -135,29 +121,31 @@
 
                         <div class="cartelesIndex">
 
-                            <div class="tarjetaCarteles">
+                            <article class="tarjetaCarteles">
                                 <img src="images/CAMP-RANDOM-ITALIA-2023.jpg" alt="random attacks italia 2023" class="carteles">
                                 <h3>Italia - Taranto</h3>
                                 <p>30/Septiembre/2023</p>
                                 <a ref="https://www.random-attacks.com/internazionali-d-italia-2023-5-editione/" target="_blank">Más información</a>
                                 
-                            </div>
+                            </article>
 
-                            <div class="tarjetaCarteles">
+                            <article class="tarjetaCarteles">
                                 <img src="images/CAMP-RANDOM-FEJJYDA-2023.jpg" alt="random attacks españa 2023"
                                     class="carteles">
                                 <h3>España - Toledo</h3>
                                 <p>4/Noviembre/2023</p>
                                 <a href="https://www.random-attacks.com/spain/" target="_blank">Más información</a>
-                            </div>
+                            </article>
 
-                            <div class="tarjetaCarteles">
+                            <article class="tarjetaCarteles">
                                 <img src="images/ekra2024.jpg" alt="random attacks bélgica 2024" class="carteles">
                                 <h3>Bélgica - Halle</h3>
                                 <p>11/Mayo/2024</p>
                                 <a href="https://www.random-attacks.com/" target="_blank">Más información</a>
-                            </div> 
+                            </article> 
+
                         </div>
+                        
                     </section>
 
                     <!-- FORMA DE CONTACTO -->
@@ -169,18 +157,17 @@
             </main>
 
             <!-- PIE DE PÁGINA -->
-            <footer>
-                <section class="pie"> 
-                    <p>Deporte oficial de Euro Budo International, representado en España por FEJJYDA.</p>
-                        <a href="https://fejjyda.com/" target="_blank">
-                            <img src="images/logo-fejjyda.svg" alt="logo fejjyda" class="logosPie">
-                        </a>
-                </section>
-        <!-- cierre div contenido -->
+            <footer class="pie">
+                <p>Deporte oficial de Euro Budo International, representado en España por FEJJYDA.</p>
+                    <a href="https://fejjyda.com/" target="_blank">
+                        <img src="images/logo-fejjyda.svg" alt="logo fejjyda" class="logosPie">
+                    </a>
+            </footer>
+        <!-- cierre div columna principal -->
         </div>
-        </footer>
-    <!-- cierre div gridpadre -->
+    <!-- cierre grid padre -->
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>

@@ -103,7 +103,6 @@ a {
 .gridPadre {
   display: grid;
   grid-template-columns: 33% 67%;
-  grid-template-areas: "menu cuerpo";
 }
 
 .cuerpo {
@@ -111,7 +110,7 @@ a {
   padding: 20px;
 }
 
-.contenido {
+.columnaPpal {
   height: 100%;
 }
 
@@ -433,6 +432,7 @@ a {
 }
 
 .pie {
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: flex-end;
